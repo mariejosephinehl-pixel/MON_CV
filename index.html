@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>CV moderne</title>
+
+    <link rel="stylesheet"
+    href="style.css">
+
+    <!-- POLICES -->
+
+    <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- CURSEUR -->
+
+    <div class="cursor"></div>
+
+    <!-- SONS -->
+
+    <audio id="clickSound"
+    src="assets/click.mp3"></audio>
+
+    <audio id="hoverSound"
+    src="assets/hover.mp3"></audio>
+
+    <!-- FLEURS -->
+
+    <img src="assets/flower1.png"
+    class="flower flower1">
+
+    <img src="assets/flower2.png"
+    class="flower flower2">
+
+    <img src="assets/flower3.png"
+    class="flower flower3">
+
+    <img src="assets/flower4.png"
+    class="flower flower4">
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#profil"
+        onclick="playClick()">
+        PROFIL
+        </a>
+
+        <a href="#formation"
+        onclick="playClick()">
+        FORMATION
+        </a>
+
+        <a href="#projets"
+        onclick="playClick()">
+        PROJETS
+        </a>
+
+        <a href="#competences"
+        onclick="playClick()">
+        COMPÉTENCES
+        </a>
+
+        <a href="#contact"
+        onclick="playClick()">
+        CONTACT
+        </a>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <img src="assets/profil.jpg"
+        class="hero-photo">
+
+        <h1 class="title">
+            Marie Joséphine
+        </h1>
+        <h2 class="Ouo">LAMAH</h2>
+
+        <h3 class="job">
+            ÉTUDIANTE EN GÉNIE INFORMATIQUE
+        </h3>
+
+        <div class="hero-buttons">
+
+            <a href="#projets"
+            class="hero-btn">
+
+                VOIR LES PROJETS
+
+            </a>
+
+            <a href="assets/CV-Marie-Josephine.pdf"
+            download
+            class="hero-btn hero-btn2">
+
+                TÉLÉCHARGER LE CV
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- PROFIL -->
+
+    <section id="profil"
+    class="content">
+
+        <div class="card reveal">
+
+            <h2>
+                À Propos
+            </h2>
+
+            <p>
+
+                <p>
+
+Je suis étudiante en génie informatique, passionnée par la technologie et les possibilités qu’elle offre pour créer des solutions innovantes. Curieuse et motivée, je m’intéresse particulièrement à la cybersécurité, au développement web et à la conception d’interfaces modernes. J’aime apprendre, relever de nouveaux défis et transformer mes idées en projets concrets alliant créativité, performance et expérience utilisateur.
+
+</p>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FORMATION -->
+
+    <section id="formation"
+    class="content">
+
+        <div class="formation-box reveal">
+
+            <h2 class="formation-title">
+                FORMATION
+            </h2>
+
+            <div class="formation-gallery">
+
+                <div class="formation-card">
+
+                    <div class="formation-text">
+
+                        <h3>
+                            Génie Informatique
+                        </h3>
+
+                        <p>
+
+                            Formation universitaire
+                            orientée développement,
+                            systèmes, bases de données
+                            et cybersécurité.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="formation-card">
+
+                    <div class="formation-text">
+
+                        <h3>
+                            Spécialisation Cybersécurité
+                        </h3>
+
+                        <p>
+
+                            Étude des systèmes sécurisés,
+                            réseaux, protection des données
+                            et architecture informatique.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="formation-card">
+
+                    <div class="formation-text">
+
+                        <h3>
+                            Baccalauréat Scientifique
+                        </h3>
+
+                        <p>
+
+                            Formation scientifique avec
+                            bases solides en mathématiques,
+                            logique et informatique.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- OUTILS -->
+
+    <section class="content">
+
+        <div class="skills-box reveal">
+
+            <h2>
+                Technologies & Outils
+            </h2>
+
+            <div class="stack-container">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Linux</span>
+                <span>MySQL</span>
+                <span>Oracle SQL</span>
+                <span>VHDL</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Figma</span>
+                <span>Canva</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJETS -->
+
+    <section id="projets"
+    class="content">
+
+        <div class="formation-box reveal">
+
+            <h2 class="formation-title">
+                PROJETS
+            </h2>
+
+            <div class="formation-gallery">
+
+                <div class="formation-card">
+
+                    <img src="assets/projet1.jpg">
+
+                    <div class="formation-text">
+
+                        <h3>
+                            Jeu Java Rapide
+                        </h3>
+
+                        <p>
+
+                            Développement d'un mini jeu
+                            interactif en Java avec
+                            logique dynamique et animations.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="formation-card">
+
+                    <img src="assets/projet2.jpg">
+
+                    <div class="formation-text">
+
+                        <h3>
+                            Smart City : Île de Kassa
+                        </h3>
+
+                        <p>
+
+                           Conception technique d'une infrastructure intelligente. Modélisation des réseaux IoT, flux de données et optimisation urbaine durable.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="formation-card">
+
+                    <img src="assets/projet3.jpg">
+
+                    <div class="formation-text">
+
+                        <h3>
+                            Portfolio Web Premium
+                        </h3>
+
+                        <p>
+
+                            Création d'un portfolio
+                            moderne avec animations,
+                            design immersif et responsive.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMPÉTENCES -->
+
+    <section id="competences"
+    class="content">
+
+        <div class="skills-box reveal">
+
+            <h2>
+                Compétences
+            </h2>
+
+            <div class="skill">
+
+                <p>HTML / CSS</p>
+
+                <div class="bar">
+
+                    <span style="width:90%"></span>
+
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <p>JavaScript</p>
+
+                <div class="bar">
+
+                    <span style="width:75%"></span>
+
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <p>Linux</p>
+
+                <div class="bar">
+
+                    <span style="width:80%"></span>
+
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <p>MySQL / Oracle SQL</p>
+
+                <div class="bar">
+
+                    <span style="width:78%"></span>
+
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <p>VHDL</p>
+
+                <div class="bar">
+
+                    <span style="width:70%"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LANGUES -->
+
+    <section class="content">
+
+        <div class="skills-box reveal">
+
+            <h2>
+                Langues
+            </h2>
+
+            <div class="skill">
+
+                <p>
+                    Français
+                </p>
+
+                <div class="bar">
+
+                    <span style="width:100%"></span>
+
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <p>
+                    Anglais
+                </p>
+
+                <div class="bar">
+
+                    <span style="width:70%"></span>
+
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <p>
+                    Chinois
+                </p>
+
+                <div class="bar">
+
+                    <span style="width:40%"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact"
+    class="content">
+
+        <div class="contact-card reveal">
+
+            <h2>
+                Contact
+            </h2>
+
+            <p>
+                📧 mariejosephinehl@gmail.com
+            </p>
+
+            <p>
+                📞 +224 611 445 157
+            </p>
+
+        </div>
+
+    </section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
